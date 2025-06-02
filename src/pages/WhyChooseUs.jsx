@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
         description="Empowering your business with expert digital marketing solutions."
       />
 
-      <div className="max-w-6xl mx-auto py-8 px-4">
+      <div className="max-w-6xl mx-auto py-4 px-4">
         <div className="relative min-h-[700px] md:min-h-[700px]">
           {/* Central Image */}
           <div
