@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Links Column */}
           <div>
-            {/* <h3 className="text-secondaryText font-semibold text-lg mb-4">Links</h3> */}
+            <h3 className="text-secondaryText font-semibold text-lg mb-4">Expertise</h3>
             <ul className="space-y-2">
               {[
                 'Google Ad Management',
