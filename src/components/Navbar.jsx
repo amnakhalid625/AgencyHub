@@ -41,7 +41,7 @@ const Navbar = () => {
               <BookOpenText size={18} />
               <span>Blogs</span>
             </Link>
-            <Link to="/contact" target="_blank" rel="noreferrer" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            <Link to="/contact"  className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <PhoneCall size={18} />
               <span>Contact</span>
             </Link>
@@ -72,23 +72,23 @@ const Navbar = () => {
               <Home size={18} />
               <span>Home</span>
             </Link>
-            <Link to="#courses" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
+            <Link to="/why-us" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <BadgeCheck size={18} />
               <span>Why Choose Us</span>
             </Link>
 
-            <Link to="#about" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
+            <Link to="/" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <Info size={18} />
               <span>About</span>
             </Link>
-            <Link to="#lectures" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
+            <Link to="/blogs" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <BookOpenText size={18} />
               <span>Blogs</span>
             </Link>
-            <a href="https://wa.me/2348100000000" target="_blank" rel="noreferrer" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
+            <Link to="/contact"  className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <PhoneCall size={18} />
               <span>Contact</span>
-            </a>
+            </Link>
           </div>
         </div>
       )}
