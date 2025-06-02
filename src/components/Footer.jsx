@@ -89,11 +89,11 @@ const Footer = () => {
           {/* Contact Column */}
           <div>
             <h3 className="text-secondaryText font-semibold text-lg mb-4">Contact</h3>
-            <address className="not-italic space-y-2 font-semibold">
-              <p>Biz.Tech.Mgt</p>
-              <p>607 Shelby </p>
-              <p className="mt-4">Phone: +1 616 274-3853</p>
-              <p>Email: Info@biztechmgt.om</p>
+            <address className="not-italic space-y-2 ">
+              <p className="font-semibold">Biz.Tech.Mgt</p>
+              <p>607 Shelby St Suite 700 Detroit, MI 48226, USA</p>
+              <p className="mt-4">Phone:+1 616 274-3853</p>
+              <p>Email:Info@biztechmgt.com</p>
             </address>
           </div>
         </div>
