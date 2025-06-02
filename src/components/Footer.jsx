@@ -72,15 +72,13 @@ const Footer = () => {
             <h3 className="text-secondaryText font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               {[
-                'About Us',
-                'Our Faculty',
+                'Why Choose Us',
+                'Blog ',
                 'Blog',
-                'Pricing',
-                'Press',
-                'Careers',
                 'Contact Us',
+                'Privacy Policy',
                 'FAQ',
-                'Accessibility'
+                'Terms & Conditions'
               ].map((item) => (
                 <li key={item}>
                   <Link to="#" className="hover:text-primary transition">{item}</Link>
