@@ -268,33 +268,33 @@ export const featureData=[
 
 export const services = [
   {
-    title: "MANAGED IT SERVICES",
-    description: "24/7 monitoring and support for your IT systems.",
+    title: "Website Development",
+    description: "Build a custom website that meets your unique needs and goals.",
     icon: FaHeadset
   },
   {
-    title: "CLOUD SOLUTIONS",
-    description: "Cloud migration and management on AWS, Azure, or GCP.",
+    title: "Landing page Design",
+    description: "Create a landing page that converts visitors into leads and customers.",
     icon: FaCloud
   },
   {
-    title: "CYBERSECURITY",
-    description: "Firewalls, antivirus, threat detection & employee training.",
+    title: "Digital Marketing",
+    description: "Boost your online presence with effective digital marketing strategies.",
     icon: FaLock
   },
   {
-    title: "NETWORK SUPPORT",
-    description: "Install & manage secure, reliable office networks.",
+    title: "Social Media Management",
+    description: "Manage and grow your social media presence effectively.",
     icon: FaNetworkWired
   },
   {
-    title: "IT CONSULTING",
-    description: "Tech strategy to align IT systems with business goals.",
+    title: "Web Hosting",
+    description: "Secure and reliable web hosting for your website.",
     icon: FaClipboardList
   },
   {
-    title: "DATA BACKUP",
-    description: "Automated secure backup and disaster recovery.",
+    title: "Website Maintenance",
+    description: "Regular maintenance and updates to keep your website running smoothly.",
     icon: FaDatabase
   }
 ];
