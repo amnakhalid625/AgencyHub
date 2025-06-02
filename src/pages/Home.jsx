@@ -99,10 +99,10 @@ const Hero = () => {
                 alt="Student learning languages"
                 className="w-full h-auto object-contain z-10 drop-shadow-xl"
                 animate={{
-                  y: [0, -20, 0], // up and down movement
+                  y: [0, -40, 0],
                 }}
                 transition={{
-                  duration: 4,
+                  duration: 7,
                   repeat: Infinity,
                   repeatType: 'loop',
                   ease: 'easeInOut',

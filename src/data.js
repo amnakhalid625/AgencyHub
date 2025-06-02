@@ -18,6 +18,8 @@ import p17 from "./assets/images/p17.jpg";
 import p18 from "./assets/images/p18.jpg";
 import p19 from "./assets/images/p19.png";
 import p20 from "./assets/images/p20.webp";
+import { FaCloud, FaLock, FaNetworkWired, FaClipboardList, FaDatabase, FaHeadset } from 'react-icons/fa';
+
 
 export const sellerData = [
   {
@@ -261,3 +263,38 @@ export const featureData=[
 
   
 ]
+
+
+
+export const services = [
+  {
+    title: "MANAGED IT SERVICES",
+    description: "24/7 monitoring and support for your IT systems.",
+    icon: FaHeadset
+  },
+  {
+    title: "CLOUD SOLUTIONS",
+    description: "Cloud migration and management on AWS, Azure, or GCP.",
+    icon: FaCloud
+  },
+  {
+    title: "CYBERSECURITY",
+    description: "Firewalls, antivirus, threat detection & employee training.",
+    icon: FaLock
+  },
+  {
+    title: "NETWORK SUPPORT",
+    description: "Install & manage secure, reliable office networks.",
+    icon: FaNetworkWired
+  },
+  {
+    title: "IT CONSULTING",
+    description: "Tech strategy to align IT systems with business goals.",
+    icon: FaClipboardList
+  },
+  {
+    title: "DATA BACKUP",
+    description: "Automated secure backup and disaster recovery.",
+    icon: FaDatabase
+  }
+];
