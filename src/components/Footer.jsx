@@ -95,7 +95,6 @@ const Footer = () => {
             <address className="not-italic space-y-2">
               <p>Biz.Tech.Mgt</p>
               <p>607 Shelby St Suite 700Detroit, MI 48226, USA</p>
-              <p>US Tax ID: 26-0000000</p>
               <p className="mt-4">Phone: +1 616 274-3853</p>
               <p>Email: Info@biztechmgt.om</p>
             </address>
