@@ -1,68 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { sellerData } from '../data';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { motion } from 'framer-motion';
-import {sellerData} from '../data.js';
 
 const BestSeller = () => {
-  const steps = sellerData;
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
-
-  // Auto-play carousel effect
-  useEffect(() => {
-    if (isHovered) return; // Pause when hovered
-    
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % steps.length);
-    }, 5000);
-    
-    return () => clearInterval(interval);
-  }, [steps.length, isHovered]);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
   const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    show: {
+    initial: { opacity: 0, y: 40 },
+    animate: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-        ease: 'easeOut',
-      },
+      transition: { duration: 0.7, ease: 'easeOut' }
     },
-    hover: {
-      y: -10,
-      boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-      transition: {
-        duration: 0.3,
-        ease: 'easeOut'
-      }
+    whileHover: {
+      y: -8,
+      transition: { duration: 0.3, ease: 'easeOut' }
     }
   };
 
-  // For mobile view - show one card at a time
-  const mobileView = window.innerWidth < 768;
-
   return (
     <section className="py-16 px-4 bg-background">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
+      <div className="max-w-7xl mx-auto relative">
+        {/* Header */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             Our Best Sellers
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -70,88 +40,47 @@ const BestSeller = () => {
           </p>
         </motion.div>
 
-        {/* Carousel Navigation (Dots) - Mobile Only */}
-        {mobileView && (
-          <div className="flex justify-center mb-6 space-x-2">
-            {steps.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all ${index === activeIndex ? 'bg-primary w-6' : 'bg-gray-300'}`}
-                aria-label={`Go to item ${index + 1}`}
-              />
-            ))}
+        {/* Swiper Carousel with External Navigation */}
+        <div className="relative">
+          {/* Custom Swiper Nav Buttons - Top Right */}
+          <div className="absolute right-0 -top-16 z-10 flex gap-3">
+            <button className="custom-swiper-button-prev w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-dark transition">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </button>
+            <button className="custom-swiper-button-next w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-dark transition">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </button>
           </div>
-        )}
 
-        {/* Carousel Container */}
-        <div 
-          className="relative overflow-hidden"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          {/* Steps Grid */}
-          <motion.div
-            className={`grid ${mobileView ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'} gap-8`}
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            spaceBetween={30}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 }
+            }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            pagination={{ el: '.best-seller-pagination', clickable: true }}
+            navigation={{
+              nextEl: '.custom-swiper-button-next',
+              prevEl: '.custom-swiper-button-prev'
+            }}
+            loop={true}
           >
-            {mobileView ? (
-              // Mobile - single card carousel
-              <motion.div
-                key={activeIndex}
-                className="bg-white rounded-xl overflow-hidden transition-all duration-300 group flex flex-col"
-                style={{ boxShadow: 'rgba(0, 0, 0, 0.1) 0px 10px 50px' }}
-                variants={cardVariants}
-                initial="hidden"
-                animate="show"
-                whileHover="hover"
-              >
-                <div className="relative h-60 overflow-hidden">
-                  <img
-                    src={steps[activeIndex].image}
-                    alt={steps[activeIndex].title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute top-4 left-4 w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    {steps[activeIndex].number}
-                  </div>
-                </div>
-
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
-                    {steps[activeIndex].title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 flex-grow leading-relaxed">
-                    {steps[activeIndex].description}
-                  </p>
-                  <div className="flex justify-between items-center">
-                    <a
-                      href={steps[activeIndex].link}
-                      className="text-primary text-sm font-medium hover:underline flex items-center"
-                    >
-                      Learn More <span className="ml-1">→</span>
-                    </a>
-                    <a
-                      href="/configure"
-                      className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
-                    >
-                      Order Now
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ) : (
-              // Desktop - show all cards
-              steps.map((step, index) => (
+            {sellerData.map((step, index) => (
+              <SwiperSlide key={index}>
                 <motion.div
-                  key={index}
-                  className="bg-white rounded-xl overflow-hidden transition-all duration-300 group flex flex-col"
-                  style={{ boxShadow: 'rgba(0, 0, 0, 0.1) 0px 10px 50px' }}
+                  className="bg-white rounded-xl overflow-hidden group flex flex-col h-full"
                   variants={cardVariants}
-                  whileHover="hover"
+                  initial="initial"
+                  whileInView="animate"
+                  whileHover="whileHover"
+                  viewport={{ once: true, amount: 0.3 }}
                 >
                   <div className="relative h-60 overflow-hidden">
                     <img
@@ -163,7 +92,6 @@ const BestSeller = () => {
                       {step.number}
                     </div>
                   </div>
-
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
                       {step.title}
@@ -171,7 +99,7 @@ const BestSeller = () => {
                     <p className="text-gray-600 mb-4 flex-grow leading-relaxed">
                       {step.description}
                     </p>
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center mt-auto">
                       <a
                         href={step.link}
                         className="text-primary text-sm font-medium hover:underline flex items-center"
@@ -180,42 +108,50 @@ const BestSeller = () => {
                       </a>
                       <a
                         href="/configure"
-                        className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
+                        className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300"
                       >
                         Order Now
                       </a>
                     </div>
                   </div>
                 </motion.div>
-              ))
-            )}
-          </motion.div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-          {/* Navigation Arrows - Mobile Only */}
-          {mobileView && (
-            <>
-              <button 
-                onClick={() => setActiveIndex((prev) => (prev - 1 + steps.length) % steps.length)}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md hover:bg-white transition-all"
-                aria-label="Previous item"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button 
-                onClick={() => setActiveIndex((prev) => (prev + 1) % steps.length)}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md hover:bg-white transition-all"
-                aria-label="Next item"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </>
-          )}
+          <div className="best-seller-pagination mt-6 flex justify-center space-x-2" />
+        </div>
+
+        <div className="mt-12 bg-white rounded-lg shadow-lg p-8 text-center">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+            Still can't decide?
+          </h3>
+          <p className="text-gray-600 mb-4">
+            Contact our support team or explore all products to find the perfect match.
+          </p>
+          <a
+            href="/products"
+            className="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition"
+          >
+            View All Products
+          </a>
         </div>
       </div>
+
+      <style jsx>{`
+        .best-seller-pagination .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background-color: #d1d5db;
+          border-radius: 9999px;
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+        .best-seller-pagination .swiper-pagination-bullet-active {
+          background-color: #f97316;
+          width: 24px;
+        }
+      `}</style>
     </section>
   );
 };

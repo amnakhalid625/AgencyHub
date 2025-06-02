@@ -7,23 +7,23 @@ import 'swiper/css/pagination';
 const testimonials = [
   {
     name: 'Hamada Khan',
-    title: 'IELTS Student',
-    text: 'The IELTS preparation course helped me achieve Band 8. The instructors were knowledgeable and the practice tests mirrored the actual exam perfectly.',
+    title: 'CEO at Anthem Software',
+    text: 'AgencyHub is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
   },
   {
     name: 'Fatima Khan',
-    title: 'German Student',
-    text: 'I completed A2 level in just 3 months. The teachers adapt to each student\'s learning pace, which made all the difference for me.',
+    title: 'CEO at Anthem Software',
+    text: 'Using AgencyHub allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team. ',
   },
   {
     name: 'Bilal Ahmed',
-    title: 'Chinese Student',
-    text: 'From zero to HSK 2 in 6 months! The character writing techniques they teach are incredibly effective for memorization.',
+    title: 'CEO at Anthem Software',
+    text: 'AgencyHub is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
   },
   {
     name: 'Sana Malik',
     title: 'French Student',
-    text: 'The DELF B1 course gave me both language skills and cultural knowledge. I now feel confident speaking with native speakers.',
+    text: 'Using AgencyHub allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team.',
   },
 ];
 
@@ -33,9 +33,9 @@ const Testimonial = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">
-            Student <span className="text-orange-500">Feedback</span>
+            Clients<span className="text-orange-500">Feedback</span>
           </h2>
-          <p className="text-gray-600 text-lg">What our students say about our language programs</p>
+          <p className="text-gray-600 text-lg">What our clients say about AgencyHub</p>
         </div>
 
         <div className="relative">

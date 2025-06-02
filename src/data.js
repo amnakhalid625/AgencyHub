@@ -258,16 +258,6 @@ export const featureData=[
     numberColor: "bg-green-500",
   },
 
-  {
-     
-    number: "04",
-    title: "Google MapBoost",
-    description:
-      "Do you want your business to be found more easily by potential customers in your local area?",
-    image: p4,
-    link: "/learn-more/research",
-    bgColor: "bg-background",
-    numberColor: "bg-red-500",
-  },
+
   
 ]

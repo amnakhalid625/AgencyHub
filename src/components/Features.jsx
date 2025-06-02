@@ -52,7 +52,7 @@ const Features = () => {
   const mobileView = window.innerWidth < 768;
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-16 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
