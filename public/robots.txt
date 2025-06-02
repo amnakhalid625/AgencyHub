@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://homeoflanguages.com/sitemap.xml
+Sitemap: https://Biz.Tech.Mgt.com/sitemap.xml

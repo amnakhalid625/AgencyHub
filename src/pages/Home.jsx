@@ -16,8 +16,8 @@ const Hero = () => {
   return (
     <>
       <Helmet>
-        <title>Languages Learning</title>
-        <meta name="description" content="Language Learning Platform" />
+        <title>Biz.Tech.Mgt</title>
+        <meta name="description" content="Business Technology Management Agency" />
       </Helmet>
       <section className="bg-background py-12 md:py-20 px-6 lg:px-16 font-sans">
         <div className="max-w-7xl mx-auto">
@@ -96,7 +96,7 @@ const Hero = () => {
 
               <motion.img
                 src={homeImg}
-                alt="Student learning languages"
+                alt="Cleaning Professional"
                 className="w-full h-auto object-contain z-10 drop-shadow-xl"
                 animate={{
                   y: [0, -40, 0],

@@ -106,7 +106,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-sm">
-                © {new Date().getFullYear()} Hallmark Education · 
+                © {new Date().getFullYear()} Biz.Tech.Mgt. All rights reserved. 
                 <Link to="#" className="hover:text-primary ml-2">Terms & Conditions</Link> · 
                 <Link to="#" className="hover:text-primary ml-2">Privacy Policy</Link>
               </p>
