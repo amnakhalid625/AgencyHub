@@ -2,7 +2,34 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import patternBg from '../assets/images/pattern.avif';
 
-const Pattern = () => {
+// The array can be here or imported from another file
+const patternData = [
+  {
+    title: (
+      <>
+        Discover tools & services <br className="hidden sm:block" /> to grow your agency
+      </>
+    ),
+    description:
+      'Partner with experts in SEO, paid media, web design, and social media. Save time, grow faster, and thrive with Biz.Tech.Mgt.',
+  },
+  {
+    title: 'Another headline for a different pattern',
+    description: 'Description for the second pattern goes here.',
+  },
+];
+
+const Pattern = ({ index = 0, title, description }) => {
+  // Use props if provided, otherwise fallback to patternData
+  const data = patternData[index] || {};
+
+  const patternTitle = title || data.title;
+  const patternDescription = description || data.description;
+
+  if (!patternTitle || !patternDescription) {
+    return null; // or fallback UI
+  }
+
   return (
     <div className="w-full my-10 px-4 md:px-20">
       <div
@@ -27,8 +54,7 @@ const Pattern = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              Discover tools & services <br className="hidden sm:block" />
-              to grow your agency
+              {patternTitle}
             </motion.h1>
 
             <motion.p
@@ -37,7 +63,7 @@ const Pattern = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Partner with experts in SEO, paid media, web design, and social media. Save time, grow faster, and thrive with Biz.Tech.Mgt.
+              {patternDescription}
             </motion.p>
           </motion.div>
         </div>
