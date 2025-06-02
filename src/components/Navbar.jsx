@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/images/logo.png'
+import logo from '/public/logoNew.png'
 import { Link } from 'react-router-dom'
 import { Home, BadgeCheck, Info, BookOpenText, PhoneCall, Menu, X } from 'lucide-react'
 
@@ -13,11 +13,11 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <img className="h-10" src={logo} alt="Logo" />
+              <img className="h-20 w-full" src={logo} alt="Logo" />
             </Link>
           </div>
 
