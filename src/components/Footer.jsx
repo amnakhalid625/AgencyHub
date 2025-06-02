@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Agency Column */}
           <div>
-            <h3 className="text-secondaryText font-semibold text-lg mb-4">Agency</h3>
+            <h3 className="text-secondaryText font-semibold text-lg mb-4">Biz.Tech.Mgt</h3>
             <ul className="space-y-2">
               {[
                 'Who We Work With',
@@ -74,7 +74,7 @@ const Footer = () => {
               {[
                 'About Us',
                 'Our Faculty',
-                'The Hallmark Method',
+                'Blog',
                 'Pricing',
                 'Press',
                 'Careers',
@@ -93,11 +93,11 @@ const Footer = () => {
           <div>
             <h3 className="text-secondaryText font-semibold text-lg mb-4">Contact</h3>
             <address className="not-italic space-y-2">
-              <p>Hallmark Education</p>
-              <p>University of the Punjab Campus</p>
-              <p>Lahore, Pakistan</p>
-              <p className="mt-4">Phone: +92 42 111 555 666</p>
-              <p>Email: info@hallmark.edu.pk</p>
+              <p>Biz.Tech.Mgt</p>
+              <p>607 Shelby St Suite 700Detroit, MI 48226, USA</p>
+              <p>US Tax ID: 26-0000000</p>
+              <p className="mt-4">Phone: +1 616 274-3853</p>
+              <p>Email: Info@biztechmgt.om</p>
             </address>
           </div>
         </div>
