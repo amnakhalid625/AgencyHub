@@ -32,10 +32,10 @@ const Navbar = () => {
               <span>Why Choose Us</span>
             </Link>
 
-            <Link to="#about" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            {/* <Link to="#about" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <Info size={18} />
               <span>About</span>
-            </Link>
+            </Link> */}
 
             <Link to="/blogs" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <BookOpenText size={18} />
@@ -77,10 +77,10 @@ const Navbar = () => {
               <span>Why Choose Us</span>
             </Link>
 
-            <Link to="/" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
+            {/* <Link to="/" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <Info size={18} />
               <span>About</span>
-            </Link>
+            </Link> */}
             <Link to="/blogs" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <BookOpenText size={18} />
               <span>Blogs</span>
