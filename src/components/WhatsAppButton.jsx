@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
           
           <div className="relative">
             <a 
-              href="https://wa.me/923331595761" 
+              href="https://wa.me/+1 616 274-3853" 
               target="_blank" 
               rel="noopener noreferrer"
               className="relative inline-flex items-center justify-center p-4 text-white bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110"

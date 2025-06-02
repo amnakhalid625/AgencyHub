@@ -30,13 +30,13 @@ const Footer = () => {
             <h3 className="text-secondaryText font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
               {[
-                'Backlinks & Guest Posts',
-                'Google Analytics 4 Setup',
-                'Site Content Audit',
-                'Blog Content Audit',
-                'Content One-Time Order',
-                'Monthly Content Campaign',
-                'Google Analytics Setup',
+                'Web Development',
+                'WordPress Hosting & Maintenance',
+                'Social Media Management',
+                'YouTube SEO Services',
+                'Custom Landing Page',
+                '5 Page Website Design',
+                'Data Governance Dashboard',
                 'SEO keywords'
               ].map((service) => (
                 <li key={service}>
@@ -48,17 +48,17 @@ const Footer = () => {
 
           {/* Links Column */}
           <div>
-            <h3 className="text-secondaryText font-semibold text-lg mb-4">Links</h3>
+            {/* <h3 className="text-secondaryText font-semibold text-lg mb-4">Links</h3> */}
             <ul className="space-y-2">
               {[
                 'Google Ad Management',
                 'Social Media Marketing',
-                'TikTok Ad Management',
-                'Corporate Programs',
-                'Refer a Friend',
-                'Student Discount',
-                'Increase Website Conversions',
-                'Single WordPress Website Hosting'
+                'Brand Reputation Services',
+                'High-volume content posting services',
+                'LinkedIn profile growth',
+                'Virtual Assistant Services',
+                'Website UX/UI Improvements',
+                'Email Marketing Integration'
               ].map((item) => (
                 <li key={item}>
                   <Link to="#" className="hover:text-primary transition">{item}</Link>
