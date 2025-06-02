@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '/public/logoNew.png'
+import logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 import { Home, BadgeCheck, Info, BookOpenText, PhoneCall, Menu, X } from 'lucide-react'
 
