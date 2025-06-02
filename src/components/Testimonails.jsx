@@ -12,19 +12,24 @@ const testimonials = [
   },
   {
     name: 'Henry',
-    title: 'CEO at Anthem Software',
+    title: 'Skyrocket Business',
     text: 'Using Biz.Tech.Mgt allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team. ',
   },
   {
     name: 'James Smith', 
-    title: 'CEO at Anthem Software',
+    title: 'Detroit Web Design Co.',
     text: 'Biz.Tech.Mgt is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
   },
   {
     name: 'Theodore',
-    title: 'CEO at Anthem Software',
+    title: 'ThickAFCredit',
     text: 'Using Biz.Tech.Mgt allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team.',
   },
+  {
+    name: 'Haith Johnson',
+    title: 'CEO LeHost',
+    text: 'Biz.Tech.Mgt is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
+  }
 ];
 
 const Testimonial = () => {
