@@ -48,7 +48,7 @@ const Features = () => {
     }
   };
 
-  // For mobile view - show one card at a time
+  // For mobile - show one card 
   const mobileView = window.innerWidth < 768;
 
   return (
