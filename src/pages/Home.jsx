@@ -83,7 +83,7 @@ const Hero = () => {
               </motion.div>
             </motion.div>
 
-            {/* Right image with zoom-in animation */}
+            {/* Right image with infinite floating animation */}
             <motion.div
               className="relative w-full lg:w-1/2 flex justify-center items-center min-h-[400px] md:min-h-[500px] lg:min-h-[600px]"
               initial={{ opacity: 0, x: 50, scale: 0.9 }}
@@ -94,10 +94,19 @@ const Hero = () => {
               <div className="hidden lg:block absolute top-10 right-10 w-48 h-48 bg-teal-400 rounded-xl rotate-12 opacity-80 -z-10 shadow-xl"></div>
               <div className="hidden lg:block absolute top-28 right-0 w-40 h-40 bg-orange-500 rounded-xl -rotate-12 opacity-70 -z-10 shadow-lg"></div>
 
-              <img
+              <motion.img
                 src={homeImg}
                 alt="Student learning languages"
                 className="w-full h-auto object-contain z-10 drop-shadow-xl"
+                animate={{
+                  y: [0, -20, 0], // up and down movement
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  ease: 'easeInOut',
+                }}
               />
             </motion.div>
           </div>
