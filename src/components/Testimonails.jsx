@@ -6,23 +6,23 @@ import 'swiper/css/pagination';
 
 const testimonials = [
   {
-    name: 'Hamada Khan',
+    name: 'Jack',
     title: 'CEO at Anthem Software',
     text: 'Biz.Tech.Mgt is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
   },
   {
-    name: 'Fatima Khan',
+    name: 'Henry',
     title: 'CEO at Anthem Software',
     text: 'Using Biz.Tech.Mgt allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team. ',
   },
   {
-    name: 'Bilal Ahmed',
+    name: 'James Smith', 
     title: 'CEO at Anthem Software',
     text: 'Biz.Tech.Mgt is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
   },
   {
-    name: 'Sana Malik',
-    title: 'French Student',
+    name: 'Theodore',
+    title: 'CEO at Anthem Software',
     text: 'Using Biz.Tech.Mgt allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team.',
   },
 ];
