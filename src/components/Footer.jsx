@@ -74,7 +74,6 @@ const Footer = () => {
               {[
                 'Why Choose Us',
                 'Blog ',
-                'Blog',
                 'Contact Us',
                 'Privacy Policy',
                 'FAQ',
