@@ -5,10 +5,13 @@ import AboveCard from '../components/AboveCard';
 import Testimonials from '../components/Testimonails';
 import Footer from '../components/Footer';
 import Pattern from '../components/Pattern';
+import BestSeller from '../components/BestSeller';
+import Features from '../components/Features';
 // import Card from '../components/Card'
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import BestSeller from '../components/BestSeller';
+import Schedule from '../components/Schedule';
+
 
 
 const Hero = () => {
@@ -107,6 +110,8 @@ const Hero = () => {
 <AboveCard />
 <Pattern />
 <BestSeller />
+<Schedule />
+<Features />
 {/* <About /> */}
 <Testimonials/>
 <Footer />

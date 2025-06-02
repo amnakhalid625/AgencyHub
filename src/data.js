@@ -19,7 +19,7 @@ import p18 from "./assets/images/p18.jpg";
 import p19 from "./assets/images/p19.png";
 import p20 from "./assets/images/p20.webp";
 
-const sellerData = [
+export const sellerData = [
   {
     number: "01",
     title: "Web Development (10 Hours)",
@@ -221,4 +221,53 @@ const sellerData = [
   },
 ];
 
-export default sellerData;
+
+export const featureData=[
+  {
+     
+    number: "01",
+    title: "Content One Time Order",
+    description:
+      "Order content as a one-time order.",
+    image: p1,
+    link: "/learn-more/research",
+    bgColor: "bg-background",
+    numberColor: "bg-blue-500",
+  },
+
+  {
+     
+    number: "02",
+    title: "Content Monthly Campaign",
+    description:
+      "Order recurring articles for websites.",
+    image: p2,
+    link: "/learn-more/research",
+    bgColor: "bg-background",
+    numberColor: "bg-orange-400",
+  },
+  {
+     
+    number: "03",
+    title: "Backlinks & Guest Posts",
+    description:
+      "Boost SEO with quality backlinks.",
+    image: p3,
+    link: "/learn-more/research",
+    bgColor: "bg-background",
+    numberColor: "bg-green-500",
+  },
+
+  {
+     
+    number: "04",
+    title: "Google MapBoost",
+    description:
+      "Do you want your business to be found more easily by potential customers in your local area?",
+    image: p4,
+    link: "/learn-more/research",
+    bgColor: "bg-background",
+    numberColor: "bg-red-500",
+  },
+  
+]

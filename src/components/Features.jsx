@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import {sellerData} from '../data.js';
+import {featureData} from '../data.js';
 
-const BestSeller = () => {
-  const steps = sellerData;
+const Features = () => {
+  const steps = featureData;
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -52,7 +52,7 @@ const BestSeller = () => {
   const mobileView = window.innerWidth < 768;
 
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -63,10 +63,10 @@ const BestSeller = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            Our Best Sellers
+            Our Features
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our most loved products that customers keep coming back for
+            Discover the features that make our platform exceptional.
           </p>
         </motion.div>
 
@@ -220,4 +220,4 @@ const BestSeller = () => {
   );
 };
 
-export default BestSeller;
+export default Features;
