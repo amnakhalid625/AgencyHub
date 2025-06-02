@@ -37,7 +37,7 @@ const Pattern = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Partner with experts in SEO, paid media, web design, and social media. Save time, grow faster, and thrive with AgencyHub.
+              Partner with experts in SEO, paid media, web design, and social media. Save time, grow faster, and thrive with Biz.Tech.Mgt.
             </motion.p>
           </motion.div>
         </div>

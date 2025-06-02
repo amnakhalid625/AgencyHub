@@ -38,7 +38,7 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Language Learning Platform
+                Business Technology Management Agency!
               </motion.div>
 
               <h1 className="text-3xl sm:text-4xl md:text-[2.6rem] font-bold text-gray-900 leading-tight md:leading-snug">
@@ -61,7 +61,7 @@ const Hero = () => {
                 transition={{ delay: 0.4, duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                Unlock your full potential with engaging, intuitive learning tools crafted for serious growth. Join thousands mastering new languages with ease!
+               Don't waste your time on research or sourcing. You don't have time for that! We do the hard hard work of sourcing, vetting, and applying quality control on the products and services you need to scale your Business.
               </motion.p>
 
               <motion.div

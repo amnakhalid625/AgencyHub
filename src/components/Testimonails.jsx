@@ -8,22 +8,22 @@ const testimonials = [
   {
     name: 'Hamada Khan',
     title: 'CEO at Anthem Software',
-    text: 'AgencyHub is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
+    text: 'Biz.Tech.Mgt is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
   },
   {
     name: 'Fatima Khan',
     title: 'CEO at Anthem Software',
-    text: 'Using AgencyHub allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team. ',
+    text: 'Using Biz.Tech.Mgt allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team. ',
   },
   {
     name: 'Bilal Ahmed',
     title: 'CEO at Anthem Software',
-    text: 'AgencyHub is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
+    text: 'Biz.Tech.Mgt is great because I can get everything in one place. They handle the fulfillment which lets me focus on acquiring clients and increasing my MRR.',
   },
   {
     name: 'Sana Malik',
     title: 'French Student',
-    text: 'Using AgencyHub allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team.',
+    text: 'Using Biz.Tech.Mgt allowed us to scale by outsourcing the items we no longer cared to deliver with our in-house team.',
   },
 ];
 
@@ -35,7 +35,7 @@ const Testimonial = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-2">
             Clients<span className="text-orange-500">Feedback</span>
           </h2>
-          <p className="text-gray-600 text-lg">What our clients say about AgencyHub</p>
+          <p className="text-gray-600 text-lg">What our clients say about Biz.Tech.Mgt</p>
         </div>
 
         <div className="relative">
