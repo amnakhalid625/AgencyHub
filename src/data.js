@@ -300,67 +300,67 @@ export const services = [
 ];
 
 
-  export const blogData = [
+ export const blogPageData = [
     {
       id: 1,
-      category: "TECHNOLOGY",
-      title: "Why is the Tesla Cybertruck designed the way it is?",
-      excerpt: "Lorem ipsum, dolor sit amet consectetur adipiscing elit. Aspernatur tenetur distinctio neque?",
+      category: "BACKLINKS",
+      title: "Does Guest Posting for Backlinks Really Work?",
+      excerpt: "Does paid guest posting for backlinks actually work? Yes! Simple, fast answer. Now comes the caveat: you have to do it right, and you",
       author: "Jerome Walton",
       time: "2h ago",
-      image: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=400&h=250&fit=crop",
+      image: "https://smthemes.com/media/images/guestpost.jpg",
       categoryColor: "bg-cyan-400"
     },
     {
       id: 2,
-      category: "PLACE",
-      title: "Hot Air Ballooning in Nepal - 1 Day - Nepal Mother House Treks",
-      excerpt: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Fugiat dolor nihil saepe. Nobis nihil minus similique hic quas mollitia. Error.",
+      category: "MARKETING",
+      title: "What Is a Content Marketing Agency?",
+      excerpt: "Technology has permanently altered the business-to-business (B2B) marketing landscape. Gone are the days of outbound tactics like cold calling, print advertising, and trade shows.",
       author: "Lewis Daniels",
       time: "Yesterday",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+      image: "https://t3.ftcdn.net/jpg/01/38/95/08/360_F_138950802_xchwSRWa3cnYi60cyZdXWQR3u7O66FUt.jpg",
       categoryColor: "bg-purple-600"
     },
     {
       id: 3,
-      category: "TRAVEL",
-      title: "New York City | Layout, People, Economy, Culture, & History",
-      excerpt: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Molestias consequuntur sequi suscipit iure fuga ea!",
+      category: "OUTSOURCING",
+      title: "Which Is the Best Example of Outsourcing?",
+      excerpt: "In an ever-changing market, it is important to stay competitive and provide customers with the best possible service. Companies must regularly assess their current",
       author: "Carrie Brewer",
       time: "23 Dec 2020",
-      image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400&h=250&fit=crop",
+      image: "https://png.pngtree.com/background/20230330/original/pngtree-the-concept-of-outsourcing-in-modern-business-concept-of-outsourcing-in-picture-image_2188137.jpg",
       categoryColor: "bg-pink-500"
     },
     {
       id: 4,
-      category: "FOOD",
-      title: "The Ultimate Guide to Mediterranean Cuisine",
-      excerpt: "Discover the rich flavors and healthy ingredients that make Mediterranean food so beloved worldwide.",
+      category: "JARGON",
+      title: "Is Incentivize a Real Word? Use It In a Sentence!",
+      excerpt: "If you look up any website about business jargon, you’ll find people moaning about the word incentivize. This over-used term is technically a real",
       author: "Maria Rodriguez",
       time: "3h ago",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwHJ_2dgv6JdsBEdVV5SOPEw2BvXVf6Ne4vA&s",
+      image: "https://c0.wallpaperflare.com/preview/196/237/229/runner-rivalry-leader-career.jpg",
       categoryColor: "bg-orange-500"
     },
     {
       id: 5,
-      category: "HEALTH",
-      title: "10 Simple Ways to Boost Your Mental Health",
-      excerpt: "Mental wellness is crucial for overall health. Here are proven strategies to improve your mental well-being.",
+      category: "OUTSOURCING",
+      title: "What Is the Difference Between Offshoring and Outsourcing?",
+      excerpt: "Outsourcing and offshoring definitions are often used interchangeably. While both types of services intersect in many ways, there are some distinct differences. Additionally, offshoring",
       author: "Dr. Sarah Johnson",
       time: "5h ago",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
+      image: "https://mod-cdn.myoutdesk.com/wp-content/uploads/2024/03/Outsourcing.png",
       categoryColor: "bg-green-500"
     },
-    // {
-    //   id: 6,
-    //   category: "BUSINESS",
-    //   title: "Remote Work: The Future of Professional Life",
-    //   excerpt: "How remote work is reshaping industries and what it means for the future of employment.",
-    //   author: "Michael Chen",
-    //   time: "1 day ago",
-    //   image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop",
-    //   categoryColor: "bg-blue-600"
-    // },
+    {
+      id: 6,
+      category: "BUSINESS",
+      title: "What Is a PPC Specialist?",
+      excerpt: "What is a PPC specialist, and what can these professionals do for me or my clients? If you’ve ever asked these questions, read on",
+      author: "Michael Chen",
+      time: "1 day ago",
+      image: "https://img.freepik.com/premium-photo/ppc-text-with-digital-marketing-icons-wooden-table-businessman-searching-laptop-pay-per-click-digital-online-marketing-internet-technology-concept_593195-313.jpg",
+      categoryColor: "bg-blue-600"
+    },
     // {
     //   id: 7,
     //   category: "LIFESTYLE",

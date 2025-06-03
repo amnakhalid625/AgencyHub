@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { blogData } from '../data';
+import { blogData } from '../blogData';
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -79,9 +79,12 @@ const BlogDetail = () => {
                 </div>
                 <div>
                   <p className="text-gray-900 font-medium">{blog.author}</p>
+                  <p className="text-gray-500 text-sm">{blog.time}</p>
                 </div>
               </div>
-              
+              <div className="text-right">
+                <p className="text-gray-500 text-sm">{blog.readTime}</p>
+              </div>
             </div>
 
             {/* Article Content */}
@@ -91,77 +94,61 @@ const BlogDetail = () => {
               </p>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                In today's rapidly evolving digital landscape, the topic of {blog.category.toLowerCase()} has become increasingly relevant. The innovations we're seeing in this field are transforming industries and reshaping how we interact with technology on a daily basis.
+                {blog.content.introduction}
               </p>
               
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Deep Dive into the Subject</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Deep Dive into {blog.category}</h2>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                When examining the current state of {blog.category.toLowerCase()}, several key trends emerge. First and foremost is the acceleration of adoption across various sectors. What was once considered niche is now mainstream, with businesses of all sizes recognizing the strategic value.
+                {blog.content.mainContent}
               </p>
               
               <div className="bg-background border-l-4 border-primary p-6 rounded-r-lg mb-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Expert Insight</h3>
                 <p className="text-gray-700 italic">
-                  "The most successful implementations we've seen focus on user experience first. Technology should serve people, not the other way around." — {blog.author}
+                  "{blog.content.expertQuote}" — {blog.author}
                 </p>
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-3 mt-8">Key Considerations</h3>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <span className="flex-shrink-0 mt-1 mr-3">
-                    <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                  <span className="text-gray-700">Scalability and future-proofing your approach</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="flex-shrink-0 mt-1 mr-3">
-                    <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                  <span className="text-gray-700">Integration with existing systems and workflows</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="flex-shrink-0 mt-1 mr-3">
-                    <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                  <span className="text-gray-700">Measuring ROI and impact metrics</span>
-                </li>
+                {blog.content.keyPoints.map((point, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="flex-shrink-0 mt-1 mr-3">
+                      <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <span className="text-gray-700">{point}</span>
+                  </li>
+                ))}
               </ul>
               
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Looking Ahead</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                As we look to the future, the potential for {blog.category.toLowerCase()} continues to expand. Emerging technologies like AI and blockchain are creating new opportunities for innovation in this space. Organizations that stay ahead of these trends will be well-positioned to capitalize on the coming wave of digital transformation.
+                {blog.content.futureOutlook}
               </p>
               
-              <div className="bg-gray-100 p-6 rounded-lg mb-8">
+              <div className="bg-background p-6 rounded-lg mb-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Practical Next Steps</h3>
                 <ol className="list-decimal pl-5 space-y-2">
-                  <li className="text-gray-700">Conduct a thorough assessment of your current capabilities</li>
-                  <li className="text-gray-700">Identify quick wins that demonstrate value early</li>
-                  <li className="text-gray-700">Develop a phased implementation roadmap</li>
-                  <li className="text-gray-700">Establish metrics to measure success</li>
+                  {blog.content.actionSteps.map((step, index) => (
+                    <li key={index} className="text-gray-700">{step}</li>
+                  ))}
                 </ol>
               </div>
               
               <p className="text-gray-700 leading-relaxed">
-                In conclusion, while challenges remain in the field of {blog.category.toLowerCase()}, the opportunities far outweigh them. By taking a strategic, measured approach, businesses of all sizes can harness these technologies to drive meaningful results and create competitive advantage in their markets.
+                {blog.content.conclusion}
               </p>
             </div>
 
             {/* Tags */}
             <div className="mt-12 pt-6 border-t border-gray-100">
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">#{blog.category.toLowerCase()}</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">#trends</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">#innovation</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">#technology</span>
+                {blog.tags.map((tag, index) => (
+                  <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">#{tag}</span>
+                ))}
               </div>
             </div>
           </div>
@@ -178,19 +165,19 @@ const BlogDetail = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900">About {blog.author.split(' ')[0]}</h3>
-                <p className="text-gray-600 mt-1">Senior Writer & Industry Expert</p>
+                <p className="text-gray-600 mt-1">{blog.authorRole}</p>
               </div>
             </div>
             <p className="text-gray-700 mt-4 leading-relaxed">
-              {blog.author} is a recognized authority in the field of {blog.category.toLowerCase()}, with over a decade of experience helping organizations navigate digital transformation. Their insights have been featured in leading industry publications and they regularly speak at international conferences.
+              {blog.authorBio}
             </p>
             <div className="mt-4 flex space-x-4">
-              <a href="#" className="text-primary hover:text-black">
+              <a href={blog.socialLinks.twitter} className="text-primary hover:text-black">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                 </svg>
               </a>
-              <a href="#" className="text-primary hover:text-black">
+              <a href={blog.socialLinks.linkedin} className="text-primary hover:text-black">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
