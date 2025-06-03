@@ -76,7 +76,6 @@ const WhyChooseUs = () => {
         </div>
       </div>
 <Services />
-      <Footer />
     </>
   );
 };

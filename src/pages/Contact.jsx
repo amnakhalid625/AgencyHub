@@ -10,9 +10,11 @@ import {
   FiInstagram,
   FiLinkedin
 } from 'react-icons/fi';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   return (
+    <>
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -184,7 +186,11 @@ const Contact = () => {
           ></iframe>
         </div>
       </section>
+
+
     </motion.div>
+
+    </>
   );
 };
 

@@ -7,7 +7,6 @@ import Footer from '../components/Footer';
 import Pattern from '../components/Pattern';
 import BestSeller from '../components/BestSeller';
 import Features from '../components/Features';
-// import Card from '../components/Card'
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import Schedule from '../components/Schedule';
@@ -119,7 +118,6 @@ const Hero = () => {
       <Features />
       {/* <About /> */}
       <Testimonials />
-      <Footer />
     </>
   );
 };

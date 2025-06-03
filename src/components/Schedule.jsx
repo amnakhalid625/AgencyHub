@@ -2,37 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import myImage from '../assets/images/schedule.svg';
 
-const containerVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      staggerChildren: 0.3,
-      duration: 0.6,
-      ease: 'easeOut'
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
-};
-
 const Schedule = () => {
   return (
-    <motion.div
-      className="bg-black py-12 px-8 md:px-16 mx-4 md:mx-20 my-10 rounded-2xl shadow-2xl"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
+    <div className="bg-black py-12 px-8 md:px-16 mx-4 md:mx-20 my-10 rounded-2xl shadow-2xl">
       <div className="flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">
         {/* Left Side - Text */}
         <motion.div
           className="text-white md:w-1/2 w-full"
-          variants={itemVariants}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 leading-snug tracking-tight">
             Schedule
@@ -48,7 +27,9 @@ const Schedule = () => {
         {/* Right Side - Image */}
         <motion.div
           className="md:w-1/2 w-full flex justify-center"
-          variants={itemVariants}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
         >
           <img
             src={myImage}
@@ -57,7 +38,7 @@ const Schedule = () => {
           />
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

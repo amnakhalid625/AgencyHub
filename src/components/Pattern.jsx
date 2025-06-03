@@ -16,16 +16,15 @@ const Pattern = () => {
         <div className="relative z-10 flex items-center justify-center h-full text-center px-4">
           <motion.div
             className="text-white max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             <motion.h1
               className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 leading-snug tracking-tight"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
             >
               Discover tools & services <br className="hidden sm:block" />
               to grow your agency
@@ -34,8 +33,8 @@ const Pattern = () => {
             <motion.p
               className="text-sm sm:text-base text-gray-300 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
             >
               Partner with experts in SEO, paid media, web design, and social media. Save time, grow faster, and thrive with Biz.Tech.Mgt.
             </motion.p>
