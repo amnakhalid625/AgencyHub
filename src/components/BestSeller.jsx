@@ -129,12 +129,12 @@ const BestSeller = () => {
           <p className="text-gray-600 mb-4">
             Contact our support team or explore all products to find the perfect match.
           </p>
-          <a
+          {/* <a
             href="/products"
             className="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition"
           >
             View All Products
-          </a>
+          </a> */}
         </div>
       </div>
 
