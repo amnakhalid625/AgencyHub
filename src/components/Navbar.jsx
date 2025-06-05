@@ -37,9 +37,9 @@ const Navbar = () => {
               <span>About</span>
             </Link> */}
 
-            <Link to="/blogs" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
+            <Link to="/blog" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <BookOpenText size={18} />
-              <span>Blogs</span>
+              <span>Blog</span>
             </Link>
             <Link to="/contact"  className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <PhoneCall size={18} />
@@ -81,9 +81,9 @@ const Navbar = () => {
               <Info size={18} />
               <span>About</span>
             </Link> */}
-            <Link to="/blogs" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
+            <Link to="/blog" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <BookOpenText size={18} />
-              <span>Blogs</span>
+              <span>Blog</span>
             </Link>
             <Link to="/contact"  className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <PhoneCall size={18} />
