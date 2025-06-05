@@ -19,9 +19,13 @@ const Schedule = () => {
           <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-4">
             Ready to showcase your product or service to top-tier agencies and brands? Biz.Tech.Mgt is your gateway to a thriving digital marketplace — no experience needed.
           </p>
-          <button className="bg-white text-black px-4 py-2 rounded-xl font-semibold hover:bg-gray-200 transition">
-            Schedule a Call
-          </button>
+        <button
+  onClick={() => window.open('https://calendly.com/muhammadwaqas2022', '_blank')}
+  className="bg-white text-black px-4 py-2 rounded-xl font-semibold hover:bg-gray-200 transition"
+>
+  Schedule a Call
+</button>
+
         </motion.div>
 
         {/* Right Side - Image */}
