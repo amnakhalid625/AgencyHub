@@ -10,28 +10,28 @@ const AboveCard = () => {
       icon: <FaBookOpen className="text-2xl text-white" />,
       title: 'Content One-Time Order',
       description: 'Get one-time content for your site.',
-      link: '/content-one-time',
+      // link: '/content-one-time',
       bgColor: 'bg-blue-500',
     },
     {
       icon: <FaKeyboard className="text-2xl text-white" />,
       title: 'Monthly Content Campaign',
       description: 'Recurring content for your blog.',
-      link: '/monthly-campaign',
+      // link: '/monthly-campaign',
       bgColor: 'bg-orange-400',
     },
     {
       icon: <FaLink className="text-2xl text-white" />,
       title: 'Backlinks & Guest Posts',
       description: 'Boost SEO with quality backlinks.',
-      link: '/backlinks-guest-posts',
+      // link: '/backlinks-guest-posts',
       bgColor: 'bg-pink-400',
     },
     {
       icon: <FaLinkedin className="text-2xl text-white" />,
       title: 'LinkedIn Outreach',
       description: 'We contact your prospects weekly.',
-      link: '/linkedin-outreach',
+      // link: '/linkedin-outreach',
       bgColor: 'bg-purple-500',
     },
   ];
@@ -87,9 +87,9 @@ const AboveCard = () => {
               </div>
               <h3 className="font-semibold text-gray-800 text-lg mb-2">{step.title}</h3>
               <p className="text-gray-600 text-sm mb-2">{step.description}</p>
-              <Link to={step.link} className="text-blue-600 text-xs inline-flex items-center hover:underline">
+              {/* <Link to={step.link} className="text-blue-600 text-xs inline-flex items-center hover:underline">
                 Learn More
-              </Link>
+              </Link> */}
             </motion.div>
           ))}
         </motion.div>

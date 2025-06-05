@@ -37,7 +37,7 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Business Technology Management Business!
+                Business Technology Management Agency!
               </motion.div>
 
               <h1 className="text-3xl sm:text-4xl md:text-[2.6rem] font-bold text-gray-900 leading-tight md:leading-snug">
