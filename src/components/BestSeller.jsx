@@ -99,7 +99,7 @@ const BestSeller = () => {
                     <p className="text-gray-600 mb-4 flex-grow leading-relaxed">
                       {step.description}
                     </p>
-                    <div className="flex justify-between items-center mt-auto">
+                    {/* <div className="flex justify-between items-center mt-auto">
                       <a
                         href={step.link}
                         className="text-primary text-sm font-medium hover:underline flex items-center"
@@ -112,7 +112,7 @@ const BestSeller = () => {
                       >
                         Order Now
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
               </SwiperSlide>
