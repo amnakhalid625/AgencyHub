@@ -16,7 +16,7 @@ const Hero = () => {
     <>
       <Helmet>
         <title>Biz.Tech.Mgt</title>
-        <meta name="description" content="Business Technology Management Agency" />
+        <meta name="description" content="Business Technology Management business" />
       </Helmet>
       <section className="bg-background py-12 md:py-20 px-6 lg:px-16 font-sans">
         <div className="max-w-7xl mx-auto">
@@ -37,11 +37,11 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Business Technology Management Agency!
+                Business Technology Management Business!
               </motion.div>
 
               <h1 className="text-3xl sm:text-4xl md:text-[2.6rem] font-bold text-gray-900 leading-tight md:leading-snug">
-                Discover the Highest Quality Products and Services to Scale Your Agency{' '}
+                Discover the Highest Quality Products and Services to Scale Your business{' '}
                 <motion.span
                   className="text-primary inline-block"
                   initial={{ opacity: 0 }}

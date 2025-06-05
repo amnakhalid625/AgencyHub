@@ -27,7 +27,7 @@ const Pattern = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
             >
               Discover tools & services <br className="hidden sm:block" />
-              to grow your agency
+              to grow your business
             </motion.h1>
 
             <motion.p

@@ -6,14 +6,14 @@ const Footer = () => {
     <footer className="bg-background text-secondaryText pt-12 pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          {/* Agency Column */}
+          {/* business Column */}
           <div>
             <h3 className="text-secondaryText font-semibold text-lg mb-4">Biz.Tech.Mgt</h3>
             <ul className="space-y-2">
               {[
                 'Who We Work With',
                 'Case Studies',
-                'Agency Partner Program',
+                'Business Partner Program',
                 'White Label Services',
                 'Client Onboarding',
                 'Request a Proposal'
