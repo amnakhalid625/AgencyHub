@@ -9,7 +9,7 @@ const Features = () => {
 
   // Auto-play carousel effect
   useEffect(() => {
-    if (isHovered) return; // Pause when hovered
+    if (isHovered) return; 
     
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % steps.length);
@@ -171,7 +171,7 @@ const Features = () => {
                     <p className="text-gray-600 mb-4 flex-grow leading-relaxed">
                       {step.description}
                     </p>
-                    {/* <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center">
                       <a
                         href={step.link}
                         className="text-primary text-sm font-medium hover:underline flex items-center"
@@ -179,12 +179,12 @@ const Features = () => {
                         Learn More <span className="ml-1">→</span>
                       </a>
                       <a
-                        href="/configure"
+                        href="#"
                         className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
                       >
                         Order Now
                       </a>
-                    </div> */}
+                    </div>
                   </div>
                 </motion.div>
               ))

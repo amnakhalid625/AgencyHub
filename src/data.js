@@ -38,7 +38,7 @@ export const sellerData = [
     description:
       "The perfect solution for individuals and small businesses looking to get their website online quickly and easily.",
     image: p2,
-    link: "/learn-more/strategy",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-orange-500",
   },
@@ -48,7 +48,7 @@ export const sellerData = [
     description:
       "Host up to 30 WordPress sites with ease! 2 instances for optimized performance.",
     image: p3,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-green-500",
   },
@@ -58,7 +58,7 @@ export const sellerData = [
     description:
       "Stay connected with your clients all week at an affordable rate with our Level II service, perfect for those needing more posts.",
     image: p4,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-pink-500",
   },
@@ -68,7 +68,7 @@ export const sellerData = [
     description:
       "Level 3 offers more control with pre-approved content and additional platforms. Perfect for those who prefer a hands-on approach.",
     image: p5,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-red-500",
   },
@@ -78,7 +78,7 @@ export const sellerData = [
     description:
       "Channel description, organization of content in playlists. Videos optimization: Title, description and tags optimization...",
     image: p6,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-yellow-500",
   },
@@ -88,7 +88,7 @@ export const sellerData = [
     description:
       "Boost conversions with our landing page web design. Affordable, customized, and optimized.",
     image: p7,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-purple-500",
   },
@@ -98,7 +98,7 @@ export const sellerData = [
     description:
       "Professional 5-page website design/redesign. Affordable, tailored to your needs. Boost your online presence now!",
     image: p8,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-teal-500",
   },
@@ -108,7 +108,7 @@ export const sellerData = [
     description:
       "Creation of data governance scorecard or dashboard with relevant KPIS. Tool to be used: DataStudio.",
     image: p9,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-indigo-500",
   },
@@ -118,7 +118,7 @@ export const sellerData = [
     description:
       "A review generation and management service that helps businesses generate positive reviews, respond to feedback, and monitor their online reputation.",
     image: p10,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-cyan-500",
   },
@@ -128,7 +128,7 @@ export const sellerData = [
     description:
       "Creation of Google My Business location. Optimization of existing one. 4 content updates per month. Tracking of users comments and reviews in real time.",
     image: p11,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-lime-500",
   },
@@ -138,7 +138,7 @@ export const sellerData = [
     description:
       "List of kws to be used in campaigns, organized in ads groups. This is the only solid foundation for a successful AdWords campaign.",
     image: p12,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-fuchsia-500",
   },
@@ -148,7 +148,7 @@ export const sellerData = [
     description:
       "Do you want your business to be found more easily by potential customers in your local area?",
     image: p13,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-emerald-500",
   },
@@ -157,7 +157,7 @@ export const sellerData = [
     title: "200 Google News Site Posts",
     description: "Boost your ranking or maintain rankings.",
     image: p14,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-rose-500",
   },
@@ -167,7 +167,7 @@ export const sellerData = [
     description:
       "Hire our team to contact and cold call your optimal prospect on LinkedIn and set appointments for you. 20 hours / week.",
     image: p15,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-sky-500",
   },
@@ -177,7 +177,7 @@ export const sellerData = [
     description:
       "Boost your ranking or maintain rankings. Perfect to maintain the ranking and keep the account floating with the ranking.",
     image: p16,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-violet-500",
   },
@@ -187,7 +187,7 @@ export const sellerData = [
     description:
       "Find a virtual assistant who is able to meet your needs and support your vision as an entrepreneur.",
     image: p17,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-amber-500",
   },
@@ -197,7 +197,7 @@ export const sellerData = [
     description:
       "Provides data-driven insights into your content's performance, including keyword density, readability, and structure.",
     image: p18,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-blue-500",
   },
@@ -207,7 +207,7 @@ export const sellerData = [
     description:
       "You can streamline your marketing tasks and campaigns, saving time and resources, while improving the effectiveness of your marketing efforts.",
     image: p19,
-    link: "/learn-more/development",
+    link: "/",
     bgColor: "bg-background",
     // numberColor: "bg-orange-500",
   },
@@ -217,7 +217,7 @@ export const sellerData = [
     description:
       "Let us troubleshoot your clients WordPress issues so you can focus on growing your business.",
     image: p20,
-    link: "/learn-more/development",
+    link: "",
     bgColor: "bg-background",
     numberColor: "bg-green-500",
   },
@@ -232,7 +232,7 @@ export const featureData=[
     description:
       "Order content as a one-time order.",
     image: p1,
-    link: "/learn-more/research",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-blue-500",
   },
@@ -244,7 +244,7 @@ export const featureData=[
     description:
       "Order recurring articles for websites.",
     image: p2,
-    link: "/learn-more/research",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-orange-400",
   },
@@ -255,7 +255,7 @@ export const featureData=[
     description:
       "Boost SEO with quality backlinks.",
     image: p3,
-    link: "/learn-more/research",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-green-500",
   },

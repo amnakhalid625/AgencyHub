@@ -295,11 +295,11 @@ const Services = () => {
             </div>
           </div>
 
-          {/* <div className="mt-12 text-center">
+          <div className="mt-12 text-center">
             <button className="bg-black text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
               Get Your Free Consultation
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
