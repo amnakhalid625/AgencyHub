@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaCheck, FaPencilAlt, FaRocket, FaClock, FaMagic } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 import { sellerData } from '../data';
 
 const LearnMorePage = () => {
-  const { id } = useParams(); // Get the product ID from URL
+  const { id } = useParams();
   const product = sellerData.find(item => item.number === id.padStart(2, '0'));
 
   if (!product) {
@@ -104,12 +105,13 @@ const LearnMorePage = () => {
                   />
                   <h4 className="font-medium text-gray-800">{item.title}</h4>
                   <p className="text-sm text-gray-600 mt-2">{item.description.substring(0, 100)}...</p>
-                  <a 
-                    href={`/learn-more/${item.number}`} 
+                  <Link 
+                    to={`/learn-more/${item.number}`} 
                     className="mt-3 inline-block text-primary text-sm font-medium"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
                     Learn More →
-                  </a>
+                  </Link>
                 </div>
               ))}
           </div>

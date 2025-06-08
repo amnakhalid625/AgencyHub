@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { sellerData } from '../data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -101,12 +102,14 @@ const BestSeller = () => {
                     </p>
                     <div className="flex justify-between items-center mt-auto">
                      {/* Change this in BestSeller.js */}
-<a
-  href={`/learn-more/${step.number}`}  // Updated to use dynamic ID
+<Link
+  to={`/learn-more/${step.number}`}
   className="text-primary text-sm font-medium hover:underline flex items-center"
+    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+
 >
   Learn More <span className="ml-1">→</span>
-</a>
+</Link>
                       <a
                         href="/configure"
                         className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300"
