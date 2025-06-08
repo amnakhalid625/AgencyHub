@@ -301,6 +301,8 @@ const Form = () => {
               className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-200"
             >
               Reset
+
+              
             </button>
           </div>
         </div>
