@@ -10,15 +10,15 @@ import { motion } from 'framer-motion';
 
 const BestSeller = () => {
   const cardVariants = {
-    initial: { opacity: 0, y: 40 },
+    initial: { opacity: 0, y: 30 },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.7, ease: 'easeOut' }
+      transition: { duration: 0.3, ease: 'easeOut' }
     },
     whileHover: {
-      y: -8,
-      transition: { duration: 0.3, ease: 'easeOut' }
+      y: -6,
+      transition: { duration: 0.25, ease: 'easeOut' }
     }
   };
 
@@ -30,7 +30,7 @@ const BestSeller = () => {
           className="text-center mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
@@ -41,9 +41,9 @@ const BestSeller = () => {
           </p>
         </motion.div>
 
-        {/* Swiper Carousel with External Navigation */}
+        {/* Swiper */}
         <div className="relative">
-          {/* Custom Swiper Nav Buttons - Top Right */}
+          {/* Custom Buttons */}
           <div className="absolute right-0 -top-16 z-10 flex gap-3">
             <button className="custom-swiper-button-prev w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-dark transition">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -75,24 +75,28 @@ const BestSeller = () => {
           >
             {sellerData.map((step, index) => (
               <SwiperSlide key={index}>
-                <motion.div
-                  className="bg-white rounded-xl overflow-hidden group flex flex-col h-full"
-                  variants={cardVariants}
-                  initial="initial"
-                  whileInView="animate"
-                  whileHover="whileHover"
-                  viewport={{ once: true, amount: 0.3 }}
-                >
-                  <div className="relative h-60 overflow-hidden">
+                <div className="bg-white rounded-xl overflow-hidden group flex flex-col h-full">
+                  {/* Animated Image Box */}
+                  <motion.div
+                    className="relative h-60 overflow-hidden"
+                    variants={cardVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    whileHover="whileHover"
+                    viewport={{ once: true, amount: 0.5 }}
+                  >
                     <img
                       src={step.image}
                       alt={step.title}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4 w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                       {step.number}
                     </div>
-                  </div>
+                  </motion.div>
+
+                  {/* Card Content */}
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
                       {step.title}
@@ -101,15 +105,13 @@ const BestSeller = () => {
                       {step.description}
                     </p>
                     <div className="flex justify-between items-center mt-auto">
-                     {/* Change this in BestSeller.js */}
-<Link
-  to={`/learn-more/${step.number}`}
-  className="text-primary text-sm font-medium hover:underline flex items-center"
-    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-
->
-  Learn More <span className="ml-1">→</span>
-</Link>
+                      <Link
+                        to={`/learn-more/${step.number}`}
+                        className="text-primary text-sm font-medium hover:underline flex items-center"
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                      >
+                        Learn More <span className="ml-1">→</span>
+                      </Link>
                       <a
                         href="/configure"
                         className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300"
@@ -118,7 +120,7 @@ const BestSeller = () => {
                       </a>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -126,6 +128,7 @@ const BestSeller = () => {
           <div className="best-seller-pagination mt-6 flex justify-center space-x-2" />
         </div>
 
+        {/* CTA Box */}
         <div className="mt-12 bg-white rounded-lg shadow-lg p-8 text-center">
           <h3 className="text-2xl font-semibold text-gray-800 mb-2">
             Still can't decide?
@@ -142,6 +145,7 @@ const BestSeller = () => {
         </div>
       </div>
 
+      {/* Swiper Pagination Style */}
       <style jsx>{`
         .best-seller-pagination .swiper-pagination-bullet {
           width: 12px;

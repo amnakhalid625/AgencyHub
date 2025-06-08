@@ -30,6 +30,7 @@ export const sellerData = [
   {
     number: "01",
     title: "Web Development (10 Hours)",
+    slug: "web-development-10-hours",
     description:
       "Development in ASP.NET, React, PHP, HTML, Bootstrap, CSS and Javascript (Strategy Session Included)",
     image: p1,
@@ -40,6 +41,7 @@ export const sellerData = [
   {
     number: "02",
     title: "Single WordPress Website Hosting",
+    slug: "single-wordpress-website-hosting",
     description:
       "The perfect solution for individuals and small businesses looking to get their website online quickly and easily.",
     image: p2,
@@ -50,6 +52,7 @@ export const sellerData = [
   {
     number: "03",
     title: "30 WordPress Sites Hosted w/ 2 Instances",
+    slug: "30-wordpress-sites-hosted-with-2-instances",
     description:
       "Host up to 30 WordPress sites with ease! 2 instances for optimized performance.",
     image: p3,
@@ -60,6 +63,7 @@ export const sellerData = [
   {
     number: "04",
     title: "Social Media - Standard Plan",
+    slug: "social-media-standard-plan",
     description:
       "Stay connected with your clients all week at an affordable rate with our Level II service, perfect for those needing more posts.",
     image: p4,
@@ -70,6 +74,7 @@ export const sellerData = [
   {
     number: "05",
     title: "Social Media - Premium Plan",
+    slug: "social-media-premium-plan",
     description:
       "Level 3 offers more control with pre-approved content and additional platforms. Perfect for those who prefer a hands-on approach.",
     image: p5,
@@ -80,6 +85,7 @@ export const sellerData = [
   {
     number: "06",
     title: "YouTube Channel Optimization - Standard Plan",
+    slug: "youtube-channel-optimization-standard-plan",
     description:
       "Channel description, organization of content in playlists. Videos optimization: Title, description and tags optimization...",
     image: p6,
@@ -90,6 +96,7 @@ export const sellerData = [
   {
     number: "07",
     title: "Landing Page Web Design",
+    slug: "landing-page-web-design",
     description:
       "Boost conversions with our landing page web design. Affordable, customized, and optimized.",
     image: p7,
@@ -100,6 +107,7 @@ export const sellerData = [
   {
     number: "08",
     title: "5-Page New Website Design",
+    slug: "5-page-new-website-design",
     description:
       "Professional 5-page website design/redesign. Affordable, tailored to your needs. Boost your online presence now!",
     image: p8,
@@ -110,6 +118,7 @@ export const sellerData = [
   {
     number: "09",
     title: "Create Data Governance Scorecard or Dashboard",
+    slug: "create-data-governance-scorecard-or-dashboard",
     description:
       "Creation of data governance scorecard or dashboard with relevant KPIS. Tool to be used: DataStudio.",
     image: p9,
@@ -120,6 +129,7 @@ export const sellerData = [
   {
     number: "10",
     title: "Reputation Management (Monthly)",
+    slug: "reputation-management-monthly",
     description:
       "A review generation and management service that helps businesses generate positive reviews, respond to feedback, and monitor their online reputation.",
     image: p10,
@@ -130,6 +140,7 @@ export const sellerData = [
   {
     number: "11",
     title: "Local SEO/Google My Business modules",
+    slug: "local-seo-google-my-business-modules",
     description:
       "Creation of Google My Business location. Optimization of existing one. 4 content updates per month. Tracking of users comments and reviews in real time.",
     image: p11,
@@ -140,6 +151,7 @@ export const sellerData = [
   {
     number: "12",
     title: "Product / Service Keyword Research",
+    slug: "product-service-keyword-research",
     description:
       "List of kws to be used in campaigns, organized in ads groups. This is the only solid foundation for a successful AdWords campaign.",
     image: p12,
@@ -150,6 +162,7 @@ export const sellerData = [
   {
     number: "13",
     title: "Google MapBooster",
+    slug: "google-mapbooster",
     description:
       "Do you want your business to be found more easily by potential customers in your local area?",
     image: p13,
@@ -160,6 +173,7 @@ export const sellerData = [
   {
     number: "14",
     title: "200 Google News Site Posts",
+    slug: "200-google-news-site-posts",
     description: "Boost your ranking or maintain rankings.",
     image: p14,
     link: "/",
@@ -169,6 +183,7 @@ export const sellerData = [
   {
     number: "15",
     title: "LinkedIn Outreach Level 1",
+    slug: "linkedin-outreach-level-1",
     description:
       "Hire our team to contact and cold call your optimal prospect on LinkedIn and set appointments for you. 20 hours / week.",
     image: p15,
@@ -179,6 +194,7 @@ export const sellerData = [
   {
     number: "16",
     title: "50 Citations - Name, Address, Phone",
+    slug: "50-citations-name-address-phone",
     description:
       "Boost your ranking or maintain rankings. Perfect to maintain the ranking and keep the account floating with the ranking.",
     image: p16,
@@ -189,6 +205,7 @@ export const sellerData = [
   {
     number: "17",
     title: "Virtual Assistant 20 Hours / Week All Tasks",
+    slug: "virtual-assistant-20-hours-week-all-tasks",
     description:
       "Find a virtual assistant who is able to meet your needs and support your vision as an entrepreneur.",
     image: p17,
@@ -199,6 +216,7 @@ export const sellerData = [
   {
     number: "18",
     title: "Surfer SEO Content 5,000 Words / Month",
+    slug: "surfer-seo-content-5000-words-month",
     description:
       "Provides data-driven insights into your content's performance, including keyword density, readability, and structure.",
     image: p18,
@@ -209,6 +227,7 @@ export const sellerData = [
   {
     number: "19",
     title: "Marketing Automation - Startup",
+    slug: "marketing-automation-startup",
     description:
       "You can streamline your marketing tasks and campaigns, saving time and resources, while improving the effectiveness of your marketing efforts.",
     image: p19,
@@ -219,6 +238,7 @@ export const sellerData = [
   {
     number: "20",
     title: "20 Hrs Mo WordPress Client Support (No host)",
+    slug: "20-hrs-month-wordpress-client-support-no-host",
     description:
       "Let us troubleshoot your clients WordPress issues so you can focus on growing your business.",
     image: p20,

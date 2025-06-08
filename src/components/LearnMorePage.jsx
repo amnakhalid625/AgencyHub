@@ -12,6 +12,35 @@ const LearnMorePage = () => {
     return <div>Product not found</div>;
   }
 
+  // Define pricing information for each product
+  const pricing = {
+    "01": { price: "$1125", startingAt: true },
+    "02": { price: "$82.5", startingAt: false },
+    "03": { price: "$1800", startingAt: true },
+    "04": { price: "$493.50", startingAt: true },
+    "05": { price: "$688.50", startingAt: true },
+    "06": { price: "$225", startingAt: true },
+    "07": { price: "$748.50", startingAt: true },
+    "08": { price: "$2998.50", startingAt: true },
+    "09": { price: "$298.50", startingAt: true },
+    "10": { price: "$445.50", startingAt: true },
+    "11": { price: "$298.50", startingAt: true },
+    "12": { price: "$450 ", startingAt: true },
+    "13": { price: "$598.50", startingAt: true },
+    "14": { price: "$1495.50 ", startingAt: true },
+    "15": { price: "$150", startingAt: true },
+    "16": { price: "$1440", startingAt: true },
+    "17": { price: "$825", startingAt: true },
+    "18": { price: "$145.5", startingAt: true },
+    "19": { price: "$1500", startingAt: true },
+    "20": { price: "$49", startingAt: true },
+
+
+
+  };
+
+  const productPrice = pricing[product.number] || { price: "$21", startingAt: true };
+
   return (
     <div className="font-sans text-gray-800">
       {/* Hero Section - Dynamic Image */}
@@ -61,7 +90,7 @@ const LearnMorePage = () => {
             </div>
 
             {/* Pricing Section - Dynamic */}
-            <div className="lg:w-1/3 bg-gradient-to-b from-orange-500 to-orange-600 text-white rounded-xl shadow-lg p-8">
+            <div className="lg:w-1/3 bg-gradient-to-b from-blue-400 to-secondary text-white rounded-xl shadow-lg p-8">
               <div className="h-full flex flex-col">
                 <h2 className="text-2xl font-bold mb-2 text-center">{product.title}</h2>
                 <p className="mb-6 text-orange-100 text-center">Get this service without subscriptions or hassles.</p>
@@ -73,14 +102,14 @@ const LearnMorePage = () => {
                   <li className="flex items-center"><FaCheck className="text-white mr-2" /> Tailored to your needs</li>
                 </ul>
                 <div className="mt-auto">
-                  <p className="text-orange-100 text-center">Starting at</p>
-                  <p className="text-3xl font-bold text-white text-center mb-4">$21</p>
-                  <a
-                    href={product.link || "#"}
-                    className="block w-full bg-white hover:bg-gray-100 text-orange-600 py-2 px-6 rounded font-medium transition text-center"
+                  {productPrice.startingAt && <p className="text-orange-100 text-center">Starting at</p>}
+                  <p className="text-3xl font-bold text-white text-center mb-4">{productPrice.price}</p>
+                  <Link
+                    to="/configure"
+                    className="block w-full bg-white hover:bg-gray-100 text-primary py-2 px-6 rounded font-medium transition text-center"
                   >
                     Order Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -96,24 +125,30 @@ const LearnMorePage = () => {
             {sellerData
               .filter(item => item.number !== product.number)
               .slice(0, 3)
-              .map((item, i) => (
-                <div key={i} className="bg-white p-5 rounded-xl border shadow-sm hover:shadow-lg transition">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-48 object-cover rounded-t-lg mb-3"
-                  />
-                  <h4 className="font-medium text-gray-800">{item.title}</h4>
-                  <p className="text-sm text-gray-600 mt-2">{item.description.substring(0, 100)}...</p>
-                  <Link 
-                    to={`/learn-more/${item.number}`} 
-                    className="mt-3 inline-block text-primary text-sm font-medium"
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  >
-                    Learn More →
-                  </Link>
-                </div>
-              ))}
+              .map((item, i) => {
+                const relatedPrice = pricing[item.number] || { price: "$21", startingAt: true };
+                return (
+                  <div key={i} className="bg-white p-5 rounded-xl border shadow-sm hover:shadow-lg transition">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-48 object-cover rounded-t-lg mb-3"
+                    />
+                    <h4 className="font-medium text-gray-800">{item.title}</h4>
+                    <p className="text-sm text-gray-600 mt-2">{item.description.substring(0, 100)}...</p>
+                    <div className="mt-3 flex justify-between items-center">
+                      <span className="text-primary font-medium">{relatedPrice.price}</span>
+                      <Link 
+                        to={`/learn-more/${item.number}`} 
+                        className="text-primary text-sm font-medium hover:underline flex items-center"
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                      >
+                        Learn More →
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </section>
