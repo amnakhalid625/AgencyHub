@@ -18,6 +18,11 @@ import p17 from "./assets/images/p17.jpg";
 import p18 from "./assets/images/p18.jpg";
 import p19 from "./assets/images/p19.png";
 import p20 from "./assets/images/p20.webp";
+import p22 from './assets/images/p22.png';
+import p23 from './assets/images/p23.jpg';
+import p24 from './assets/images/p24.png';
+
+
 import { FaCloud, FaLock, FaNetworkWired, FaClipboardList, FaDatabase, FaHeadset } from 'react-icons/fa';
 
 
@@ -231,7 +236,7 @@ export const featureData=[
     title: "Content One Time Order",
     description:
       "Order content as a one-time order.",
-    image: p1,
+    image: p22,
     link: "/",
     bgColor: "bg-background",
     numberColor: "bg-blue-500",
@@ -243,7 +248,7 @@ export const featureData=[
     title: "Content Monthly Campaign",
     description:
       "Order recurring articles for websites.",
-    image: p2,
+    image: p23,
     link: "/",
     bgColor: "bg-background",
     numberColor: "bg-orange-400",
@@ -254,7 +259,7 @@ export const featureData=[
     title: "Backlinks & Guest Posts",
     description:
       "Boost SEO with quality backlinks.",
-    image: p3,
+    image: p24,
     link: "/",
     bgColor: "bg-background",
     numberColor: "bg-green-500",

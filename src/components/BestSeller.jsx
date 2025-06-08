@@ -100,12 +100,13 @@ const BestSeller = () => {
                       {step.description}
                     </p>
                     <div className="flex justify-between items-center mt-auto">
-                      <a
-                        href={step.link}
-                        className="text-primary text-sm font-medium hover:underline flex items-center"
-                      >
-                        Learn More <span className="ml-1">→</span>
-                      </a>
+                     {/* Change this in BestSeller.js */}
+<a
+  href={`/learn-more/${step.number}`}  // Updated to use dynamic ID
+  className="text-primary text-sm font-medium hover:underline flex items-center"
+>
+  Learn More <span className="ml-1">→</span>
+</a>
                       <a
                         href="/configure"
                         className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300"

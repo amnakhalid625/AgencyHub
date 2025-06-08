@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import {featureData} from '../data.js';
+import { featureData } from '../data.js';
+import { Link } from 'react-router-dom';
 
 const Features = () => {
   const steps = featureData;
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [mobileView, setMobileView] = useState(false);
 
   // Auto-play carousel effect
   useEffect(() => {
@@ -18,6 +20,18 @@ const Features = () => {
     return () => clearInterval(interval);
   }, [steps.length, isHovered]);
 
+  // Handle mobile view detection
+  useEffect(() => {
+    const handleResize = () => {
+      setMobileView(window.innerWidth < 768);
+    };
+    
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -47,9 +61,6 @@ const Features = () => {
       }
     }
   };
-
-  // For mobile - show one card 
-  const mobileView = window.innerWidth < 768;
 
   return (
     <section className="py-16 px-4 bg-background">
@@ -90,7 +101,7 @@ const Features = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Steps Grid */}
+          {/* Features Grid */}
           <motion.div
             className={`grid ${mobileView ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'} gap-8`}
             variants={containerVariants}
@@ -128,18 +139,24 @@ const Features = () => {
                     {steps[activeIndex].description}
                   </p>
                   <div className="flex justify-between items-center">
-                    <a
-                      href={steps[activeIndex].link}
+                    <Link
+                      to={`/features/${steps[activeIndex].number}`}
+                       onClick={() => {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+             }}
                       className="text-primary text-sm font-medium hover:underline flex items-center"
                     >
                       Learn More <span className="ml-1">→</span>
-                    </a>
-                    <a
-                      href="/configure"
+                    </Link>
+                    <Link
+                      to="/configure"
+                       onClick={() => {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+             }}
                       className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
                     >
                       Order Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
@@ -172,18 +189,24 @@ const Features = () => {
                       {step.description}
                     </p>
                     <div className="flex justify-between items-center">
-                      <a
-                        href={step.link}
+                      <Link
+                        to={`/features/${step.number}`}
+                         onClick={() => {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+             }}
                         className="text-primary text-sm font-medium hover:underline flex items-center"
                       >
                         Learn More <span className="ml-1">→</span>
-                      </a>
-                      <a
-                        href="#"
+                      </Link>
+                      <Link
+                        to="/configure"
+                         onClick={() => {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+             }}
                         className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg"
                       >
                         Order Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
