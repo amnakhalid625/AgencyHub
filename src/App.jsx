@@ -7,6 +7,7 @@ import WhyChooseUs from "./pages/WhyChooseUs";
 import Contact from "./pages/Contact";
 import Blogs from './pages/Blogs';
 import BlogDetail from './components/BlogDetail';
+import LearnMorePage from './components/LearnMorePage';
 import Error from './components/Error';
 
 function App() {
@@ -18,13 +19,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/why-us" element={<WhyChooseUs />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/learn" element={<LearnMorePage />} />
+
           <Route path="*" element={<Error />} />
         </Routes>
 
-        <Footer /> {/* 👈 This will appear on every page */}
+        <Footer /> 
       </BrowserRouter>
     </HelmetProvider>
   );

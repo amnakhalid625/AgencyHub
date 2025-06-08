@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
-import { Home, BadgeCheck, Info, BookOpenText, PhoneCall, Menu, X } from 'lucide-react'
+import { Home, BadgeCheck, BookOpenText, PhoneCall, Menu, X } from 'lucide-react'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +32,7 @@ const Navbar = () => {
               <span>Why Choose Us</span>
             </Link>
 
-            {/* <Link to="#about" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
-              <Info size={18} />
-              <span>About</span>
-            </Link> */}
+          
 
             <Link to="/blog" className="flex items-center space-x-2 text-gray-700 font-semibold hover:text-hoverColor transition-colors duration-200">
               <BookOpenText size={18} />
@@ -76,11 +73,6 @@ const Navbar = () => {
               <BadgeCheck size={18} />
               <span>Why Choose Us</span>
             </Link>
-
-            {/* <Link to="/" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
-              <Info size={18} />
-              <span>About</span>
-            </Link> */}
             <Link to="/blog" className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:text-hoverColor hover:bg-gray-50">
               <BookOpenText size={18} />
               <span>Blog</span>
