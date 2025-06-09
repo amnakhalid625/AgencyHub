@@ -38,7 +38,7 @@ const Testimonial = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">
-            Clients<span className="text-orange-500">Feedback</span>
+            Clients Feedback
           </h2>
           <p className="text-gray-600 text-lg">What our clients say about Biz.Tech.Mgt</p>
         </div>

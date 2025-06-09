@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Biz.Tech.Mgt</title>
-        <meta name="description" content="Business Technology Management business" />
+      <title>Biz.Tech.Mgt</title>
+       <meta name="description" content="Business Technology Management business" />
       </Helmet>
-     <Hero />
+      <Hero />
       <AboveCard />
       <Pattern />
       <BestSeller />

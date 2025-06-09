@@ -30,7 +30,7 @@ function App() {
     <HelmetProvider>
       <BrowserRouter>
         <Navbar />
-        <Toaster position="top-right" reverseOrder={false} />
+        <Toaster position="top-center" reverseOrder={false} />
 
         <UserAuthContextProvider >
 
