@@ -41,14 +41,14 @@ const Navbar = () => {
             </Link>
 
             {/* Signup & Login Buttons */}
-            <div className="flex items-center space-x-4 ml-6">
+            {/* <div className="flex items-center space-x-4 ml-6">
               <Link to="/signup" className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-md hover:bg-hoverColor transition-colors duration-200">
                 Sign Up
               </Link>
               <Link to="/login" className="px-4 py-2 text-sm font-medium text-primary border border-primary rounded-md hover:bg-gray-100 transition-colors duration-200">
                 Login
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile menu button */}
@@ -86,12 +86,12 @@ const Navbar = () => {
             </Link>
 
             {/* Mobile Sign Up & Login */}
-            <Link to="/signup" className="block w-full text-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-md hover:bg-hoverColor">
+            {/* <Link to="/signup" className="block w-full text-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-md hover:bg-hoverColor">
               Sign Up
             </Link>
             <Link to="/login" className="block w-full text-center px-4 py-2 text-sm font-medium text-primary border border-primary rounded-md hover:bg-gray-100">
               Login
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}
