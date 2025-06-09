@@ -242,7 +242,7 @@ export const sellerData = [
     description:
       "Let us troubleshoot your clients WordPress issues so you can focus on growing your business.",
     image: p20,
-    link: "",
+    link: "/",
     bgColor: "bg-background",
     numberColor: "bg-green-500",
   },

@@ -10,29 +10,33 @@ const AboveCard = () => {
       icon: <FaBookOpen className="text-2xl text-white" />,
       title: 'Content One-Time Order',
       description: 'Get one-time content for your site.',
-      link: '/',
+      link: '/service/content-one-time',
       bgColor: 'bg-blue-500',
+      slug: 'content-one-time'
     },
     {
       icon: <FaKeyboard className="text-2xl text-white" />,
       title: 'Monthly Content Campaign',
       description: 'Recurring content for your blog.',
-      link: '/',
+      link: '/service/monthly-content',
       bgColor: 'bg-orange-400',
+      slug: 'monthly-content'
     },
     {
       icon: <FaLink className="text-2xl text-white" />,
       title: 'Backlinks & Guest Posts',
       description: 'Boost SEO with quality backlinks.',
-      link: '/',
+      link: '/service/backlinks-guest-posts',
       bgColor: 'bg-pink-400',
+      slug: 'backlinks-guest-posts'
     },
     {
       icon: <FaLinkedin className="text-2xl text-white" />,
       title: 'LinkedIn Outreach',
       description: 'We contact your prospects weekly.',
-      link: '/',
+      link: '/service/linkedin-outreach',
       bgColor: 'bg-purple-500',
+      slug: 'linkedin-outreach'
     },
   ];
 
@@ -64,14 +68,12 @@ const AboveCard = () => {
         >
           Our Approach
         </motion.p>
-
         <motion.h2
           className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10"
           variants={cardVariants}
         >
           Our Popular Services
         </motion.h2>
-
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto"
           variants={containerVariants}
@@ -94,7 +96,6 @@ const AboveCard = () => {
           ))}
         </motion.div>
       </motion.div>
-
       <WhatsAppButton />
     </>
   );

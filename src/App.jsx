@@ -19,6 +19,12 @@ import Payment from "./components/Payment";
 import ForgetPassword from "./components/ForgotPassword";
 
 
+
+import ServiceDetail from './components/ServiceDetail';
+
+
+
+
 function App() {
   return (
     <HelmetProvider>
@@ -40,6 +46,9 @@ function App() {
             <Route path="/login" element={<Form />} />
             <Route path="/signup" element={<Signup />} />
 <Route path="/forgot-password" element={<ForgetPassword />} />
+
+          <Route path="/service/:serviceSlug" element={<ServiceDetail />} />
+
 
             <Route path="*" element={<Error />} />
           </Routes>

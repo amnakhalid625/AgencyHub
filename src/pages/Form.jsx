@@ -4,7 +4,7 @@ import loginImage from '../assets/images/form.svg';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
 import { useUserAuth } from '../context/UserAuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 
 const Form = () => {
@@ -111,7 +111,7 @@ const Form = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
               <div className="text-right mt-2">
-                <a href="/forgot-password" className="text-sm text-blue-600 hover:underline">
+                <a href="/forgot-password" className="text-sm text-black hover:underline">
                   Forgot Password?
                 </a>
               </div>
@@ -173,12 +173,12 @@ const Form = () => {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Don’t have an account?{' '}
-              <a
-                href="/signup"
-                className="text-blue-600 font-semibold hover:underline"
+              <Link
+                to="/signup"
+                className="text-black font-semibold hover:underline"
               >
                 Sign up
-              </a>
+              </Link>
             </p>
           </div>
         </motion.div>

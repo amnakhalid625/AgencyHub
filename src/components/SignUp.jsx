@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import signupImage from '../assets/images/form.svg'; // replace with your signup image path
+import signupImage from '../assets/images/signup.svg'; 
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
 import { useUserAuth } from '../context/UserAuthContext';
 import { toast } from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
   const [name, setName] = useState('');
@@ -169,9 +169,9 @@ const Signup = () => {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Already have an account?{' '}
-              <a href="/login" className="text-blue-600 font-semibold hover:underline">
+              <Link to="/login" className="text-black font-semibold hover:underline">
                 Login
-              </a>
+              </Link>
             </p>
           </div>
         </motion.div>
