@@ -90,7 +90,7 @@ const LearnMorePage = () => {
             </div>
 
             {/* Pricing Section - Dynamic */}
-            <div className="lg:w-1/3 bg-gradient-to-b from-blue-400 to-secondary text-white rounded-xl shadow-lg p-8">
+            <div className="lg:w-1/3 bg-primary text-white rounded-xl shadow-lg p-8">
               <div className="h-full flex flex-col">
                 <h2 className="text-2xl font-bold mb-2 text-center">{product.title}</h2>
                 <p className="mb-6 text-orange-100 text-center">Get this service without subscriptions or hassles.</p>
