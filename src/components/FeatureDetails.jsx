@@ -67,7 +67,7 @@ const FeatureDetails = () => {
             Start using this feature today and see the difference it can make for your business.
           </p>
           <Link
-            to="/configure"
+            to="/"
            onClick={() => {
                window.scrollTo({ top: 0, behavior: 'smooth' });
              }}

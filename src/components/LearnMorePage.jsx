@@ -105,7 +105,7 @@ const LearnMorePage = () => {
                   {productPrice.startingAt && <p className="text-orange-100 text-center">Starting at</p>}
                   <p className="text-3xl font-bold text-white text-center mb-4">{productPrice.price}</p>
                   <Link
-                    to="/configure"
+                    to="/"
                     className="block w-full bg-white hover:bg-gray-100 text-primary py-2 px-6 rounded font-medium transition text-center"
                   >
                     Order Now

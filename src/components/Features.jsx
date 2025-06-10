@@ -149,7 +149,7 @@ const Features = () => {
                       Learn More <span className="ml-1">→</span>
                     </Link>
                     <Link
-                      to="/configure"
+                      to="/"
                        onClick={() => {
                window.scrollTo({ top: 0, behavior: 'smooth' });
              }}
@@ -199,7 +199,7 @@ const Features = () => {
                         Learn More <span className="ml-1">→</span>
                       </Link>
                       <Link
-                        to="/configure"
+                        to="/"
                          onClick={() => {
                window.scrollTo({ top: 0, behavior: 'smooth' });
              }}

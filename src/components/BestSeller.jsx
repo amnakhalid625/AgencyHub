@@ -112,12 +112,12 @@ const BestSeller = () => {
                       >
                         Learn More <span className="ml-1">→</span>
                       </Link>
-                      <a
-                        href="/configure"
+                      <Link
+                        to="/"
                         className="bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-md hover:opacity-90 transition-all duration-300"
                       >
                         Order Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
